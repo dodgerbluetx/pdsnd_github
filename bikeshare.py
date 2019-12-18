@@ -46,7 +46,8 @@ def get_filters():
             month_good = 'n'
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
-    days = ['all', 'sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
+    days = ['all', 'sunday', 'monday', 'tuesday', 'wednesday', 'thursday',
+            'friday', 'saturday']
     day_good = 'n'
     while day_good == 'n':
         day = input("Enter the day of the week to analyze (All, Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday): ").lower()
