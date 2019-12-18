@@ -66,7 +66,6 @@ def get_filters():
     print('='*70)
     return city, month, day
 
-
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
@@ -268,8 +267,6 @@ def main():
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
-
-        #break
 
 if __name__ == "__main__":
 	main()
