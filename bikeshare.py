@@ -29,12 +29,10 @@ def get_filters():
     while city_good == 'n':
         city = input("Enter the name of the city to analyze (Chicago, New York City, Washington): ").lower()
         if city in cities:
-            print(Fore.GREEN + '{} it is!'.format(city.capitalize()) + Style.RESET_ALL)
-            print()
+            print(Fore.GREEN + '{} it is!\n'.format(city.capitalize()) + Style.RESET_ALL)
             city_good = 'y'
         else:
-            print(Fore.RED + 'Error! "{}" is not a valid entry, please try again!'.format(city) + Style.RESET_ALL)
-            print()
+            print(Fore.RED + 'Error! "{}" is not a valid entry, please try again!\n'.format(city) + Style.RESET_ALL)
             city_good = 'n'
 
     # TO DO: get user input for month (all, january, february, ... , june)
@@ -43,31 +41,27 @@ def get_filters():
     while month_good == 'n':
         month = input("Enter the month to analyze (All, January, February, March, April, May, June): ").lower()
         if month in months:
-            print(Fore.GREEN + '{} it is!'.format(month.capitalize()) + Style.RESET_ALL)
-            print()
+            print(Fore.GREEN + '{} it is!\n'.format(month.capitalize()) + Style.RESET_ALL)
             month_good = 'y'
         else:
-            print(Fore.RED + 'Error! "{}" is not a valid entry, please try again!'.format(month) + Style.RESET_ALL)
-            print()
+            print(Fore.RED + 'Error! "{}" is not a valid entry, please try again!\n'.format(month) + Style.RESET_ALL)
             month_good = 'n'
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
-    days = ['all', 'sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
+    days = ['all', 'sunday', 'monday', 'tuesday', 'wednesday', 'thursday',
+            'friday', 'saturday']
     day_good = 'n'
     while day_good == 'n':
         day = input("Enter the day of the week to analyze (All, Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday): ").lower()
         if day in days:
-            print(Fore.GREEN + '{} it is!'.format(day.capitalize()) + Style.RESET_ALL)
-            print()
+            print(Fore.GREEN + '{} it is!\n'.format(day.capitalize()) + Style.RESET_ALL)
             day_good = 'y'
         else:
-            print(Fore.RED + 'Error! "{}" is not a valid entry, please try again!'.format(day) + Style.RESET_ALL)
-            print()
+            print(Fore.RED + 'Error! "{}" is not a valid entry, please try again!\n'.format(day) + Style.RESET_ALL)
             day_good = 'n'
 
     print('='*70)
     return city, month, day
-
 
 def load_data(city, month, day):
     """
@@ -270,8 +264,6 @@ def main():
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
-
-        #break
 
 if __name__ == "__main__":
 	main()
