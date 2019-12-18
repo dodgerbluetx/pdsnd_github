@@ -4,7 +4,7 @@
 ### Bikeshare Script
 
 ### Description
-This is a script to analyze bikeshare data
+This is a script to analyze bikeshare data.  It is interactive and I wrote it myself!
 
 ### Files used
 chicago.csv
